@@ -11,15 +11,13 @@ GoogleSearch
     maximize browser window
     set selenium speed  1seconds
     SearchPythonInGoogle
+    capture page screenshot     python.png
     close browser
 
 PrintTheResult
     create file     ${path}     Test Passed
     file should exist   ${path}
     copy file  ${path}  ~/file.txt
-
-
-
 
 *** Keywords ***
 SearchPythonInGoogle
