@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.6.3 on win32)" generated="20220329 23:48:44.569" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20220330 21:29:06.440" rpa="false">
 <suite id="s1" name="PYTHON" source="C:\Users\grames\PycharmProjects\Assignment\TestCases\PYTHON.robot">
 <test id="s1-t1" name="GoogleSearch">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,19 +8,19 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20220329 23:48:44.682" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
-<status status="PASS" starttime="20220329 23:48:44.682" endtime="20220329 23:48:46.353"></status>
+<msg timestamp="20220330 21:29:06.592" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<status status="PASS" starttime="20220330 21:29:06.592" endtime="20220330 21:29:10.348"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220329 23:48:46.354" endtime="20220329 23:48:46.479"></status>
+<status status="PASS" starttime="20220330 21:29:10.349" endtime="20220330 21:29:10.483"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>1seconds</arg>
 </arguments>
-<status status="PASS" starttime="20220329 23:48:46.481" endtime="20220329 23:48:46.482"></status>
+<status status="PASS" starttime="20220330 21:29:10.483" endtime="20220330 21:29:10.483"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -30,8 +30,8 @@
 <assign>
 <var>${"search_box"}</var>
 </assign>
-<msg timestamp="20220329 23:48:46.482" level="INFO">${"search_box"} = xpath://input[@type='text']</msg>
-<status status="PASS" starttime="20220329 23:48:46.482" endtime="20220329 23:48:46.482"></status>
+<msg timestamp="20220330 21:29:10.483" level="INFO">${"search_box"} = xpath://input[@type='text']</msg>
+<status status="PASS" starttime="20220330 21:29:10.483" endtime="20220330 21:29:10.483"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -39,8 +39,8 @@
 <arg>${"search_box"}</arg>
 <arg>python</arg>
 </arguments>
-<msg timestamp="20220329 23:48:46.484" level="INFO">Typing text 'python' into text field 'xpath://input[@type='text']'.</msg>
-<status status="PASS" starttime="20220329 23:48:46.484" endtime="20220329 23:48:49.575"></status>
+<msg timestamp="20220330 21:29:10.483" level="INFO">Typing text 'python' into text field 'xpath://input[@type='text']'.</msg>
+<status status="PASS" starttime="20220330 21:29:10.483" endtime="20220330 21:29:13.586"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -48,13 +48,10 @@
 <arg>${"search_box"}</arg>
 <arg>ENTER</arg>
 </arguments>
-<msg timestamp="20220329 23:48:49.575" level="INFO">Sending key(s) ('ENTER',) to xpath://input[@type='text'] element.</msg>
-<msg timestamp="20220329 23:48:50.588" level="INFO">Pressing special key ENTER to element.</msg>
-<status status="PASS" starttime="20220329 23:48:49.575" endtime="20220329 23:48:52.944"></status>
+<msg timestamp="20220330 21:29:13.587" level="INFO">Sending key(s) ('ENTER',) to xpath://input[@type='text'] element.</msg>
+<msg timestamp="20220330 21:29:14.598" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20220330 21:29:13.587" endtime="20220330 21:29:17.436"></status>
 </kw>
-<status status="PASS" starttime="20220329 23:48:44.682" endtime="20220329 23:48:52.944" critical="yes"></status>
-</test>
-<test id="s1-t2" name="WelcomeToPython">
 <kw name="Get Element Count" library="SeleniumLibrary">
 <doc>Returns number of elements matching ``locator``.</doc>
 <arguments>
@@ -63,23 +60,23 @@
 <assign>
 <var>${AllLinksCount}</var>
 </assign>
-<msg timestamp="20220329 23:48:53.963" level="INFO">${AllLinksCount} = 23</msg>
-<status status="PASS" starttime="20220329 23:48:52.944" endtime="20220329 23:48:53.963"></status>
+<msg timestamp="20220330 21:29:18.456" level="INFO">${AllLinksCount} = 23</msg>
+<status status="PASS" starttime="20220330 21:29:17.436" endtime="20220330 21:29:18.456"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${AllLinksCount}</arg>
 </arguments>
-<status status="PASS" starttime="20220329 23:48:53.963" endtime="20220329 23:48:53.963"></status>
+<status status="PASS" starttime="20220330 21:29:18.456" endtime="20220330 21:29:18.458"></status>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <doc>Returns a list containing given items.</doc>
 <assign>
 <var>@{LinkItems}</var>
 </assign>
-<msg timestamp="20220329 23:48:53.963" level="INFO">@{LinkItems} = [ ]</msg>
-<status status="PASS" starttime="20220329 23:48:53.963" endtime="20220329 23:48:53.963"></status>
+<msg timestamp="20220330 21:29:18.460" level="INFO">@{LinkItems} = [ ]</msg>
+<status status="PASS" starttime="20220330 21:29:18.460" endtime="20220330 21:29:18.460"></status>
 </kw>
 <kw name="${i} IN RANGE [ 1 ]" type="for">
 <kw name="${i} = 0" type="foritem">
@@ -91,102 +88,19 @@
 <assign>
 <var>${LinkText}</var>
 </assign>
-<msg timestamp="20220329 23:48:55.999" level="INFO">${LinkText} = Welcome to Python.org</msg>
-<status status="PASS" starttime="20220329 23:48:53.963" endtime="20220329 23:48:55.999"></status>
+<msg timestamp="20220330 21:29:20.493" level="INFO">${LinkText} = Welcome to Python.org</msg>
+<status status="PASS" starttime="20220330 21:29:18.460" endtime="20220330 21:29:20.493"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${LinkText}</arg>
 </arguments>
-<status status="PASS" starttime="20220329 23:48:55.999" endtime="20220329 23:48:55.999"></status>
+<status status="PASS" starttime="20220330 21:29:20.493" endtime="20220330 21:29:20.493"></status>
 </kw>
-<status status="PASS" starttime="20220329 23:48:53.963" endtime="20220329 23:48:56.000"></status>
+<status status="PASS" starttime="20220330 21:29:18.460" endtime="20220330 21:29:20.493"></status>
 </kw>
-<status status="PASS" starttime="20220329 23:48:53.963" endtime="20220329 23:48:56.000"></status>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220329 23:48:56.000" endtime="20220329 23:48:59.061"></status>
-</kw>
-<status status="PASS" starttime="20220329 23:48:52.944" endtime="20220329 23:48:59.061" critical="yes"></status>
-</test>
-<test id="s1-t3" name="PythonW3School">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>${url}</arg>
-<arg>${browser}</arg>
-</arguments>
-<msg timestamp="20220329 23:48:59.061" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
-<status status="PASS" starttime="20220329 23:48:59.061" endtime="20220329 23:49:01.824"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220329 23:49:01.824" endtime="20220329 23:49:02.950"></status>
-</kw>
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<arguments>
-<arg>1seconds</arg>
-</arguments>
-<status status="PASS" starttime="20220329 23:49:02.952" endtime="20220329 23:49:02.952"></status>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<arguments>
-<arg>xpath://input[@type='text']</arg>
-</arguments>
-<assign>
-<var>${"search_box"}</var>
-</assign>
-<msg timestamp="20220329 23:49:02.953" level="INFO">${"search_box"} = xpath://input[@type='text']</msg>
-<status status="PASS" starttime="20220329 23:49:02.953" endtime="20220329 23:49:02.953"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>${"search_box"}</arg>
-<arg>python</arg>
-</arguments>
-<msg timestamp="20220329 23:49:02.953" level="INFO">Typing text 'python' into text field 'xpath://input[@type='text']'.</msg>
-<status status="PASS" starttime="20220329 23:49:02.953" endtime="20220329 23:49:06.065"></status>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
-<arguments>
-<arg>${"search_box"}</arg>
-<arg>ENTER</arg>
-</arguments>
-<msg timestamp="20220329 23:49:06.065" level="INFO">Sending key(s) ('ENTER',) to xpath://input[@type='text'] element.</msg>
-<msg timestamp="20220329 23:49:07.081" level="INFO">Pressing special key ENTER to element.</msg>
-<status status="PASS" starttime="20220329 23:49:06.065" endtime="20220329 23:49:09.533"></status>
-</kw>
-<kw name="Get Element Count" library="SeleniumLibrary">
-<doc>Returns number of elements matching ``locator``.</doc>
-<arguments>
-<arg>xpath://h3</arg>
-</arguments>
-<assign>
-<var>${AllLinksCount}</var>
-</assign>
-<msg timestamp="20220329 23:49:10.541" level="INFO">${AllLinksCount} = 23</msg>
-<status status="PASS" starttime="20220329 23:49:09.533" endtime="20220329 23:49:10.541"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${AllLinksCount}</arg>
-</arguments>
-<status status="PASS" starttime="20220329 23:49:10.541" endtime="20220329 23:49:10.541"></status>
-</kw>
-<kw name="Create List" library="BuiltIn">
-<doc>Returns a list containing given items.</doc>
-<assign>
-<var>@{LinkItems}</var>
-</assign>
-<msg timestamp="20220329 23:49:10.541" level="INFO">@{LinkItems} = [ ]</msg>
-<status status="PASS" starttime="20220329 23:49:10.541" endtime="20220329 23:49:10.541"></status>
+<status status="PASS" starttime="20220330 21:29:18.460" endtime="20220330 21:29:20.493"></status>
 </kw>
 <kw name="${i} IN RANGE [ 1 ]" type="for">
 <kw name="${i} = 0" type="foritem">
@@ -198,37 +112,203 @@
 <assign>
 <var>${LinkText}</var>
 </assign>
-<msg timestamp="20220329 23:49:12.593" level="INFO">${LinkText} = Python Tutorial - W3Schools</msg>
-<status status="PASS" starttime="20220329 23:49:10.541" endtime="20220329 23:49:12.593"></status>
+<msg timestamp="20220330 21:29:22.542" level="INFO">${LinkText} = Python Tutorial - W3Schools</msg>
+<status status="PASS" starttime="20220330 21:29:20.493" endtime="20220330 21:29:22.542"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${LinkText}</arg>
 </arguments>
-<status status="PASS" starttime="20220329 23:49:12.593" endtime="20220329 23:49:12.593"></status>
+<status status="PASS" starttime="20220330 21:29:22.542" endtime="20220330 21:29:22.542"></status>
 </kw>
-<status status="PASS" starttime="20220329 23:49:10.541" endtime="20220329 23:49:12.593"></status>
+<status status="PASS" starttime="20220330 21:29:20.493" endtime="20220330 21:29:22.542"></status>
 </kw>
-<status status="PASS" starttime="20220329 23:49:10.541" endtime="20220329 23:49:12.593"></status>
+<status status="PASS" starttime="20220330 21:29:20.493" endtime="20220330 21:29:22.542"></status>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220329 23:49:12.593" endtime="20220329 23:49:15.674"></status>
+<kw name="${i} IN RANGE [ 1 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//h3)[${12}]</arg>
+</arguments>
+<assign>
+<var>${LinkText}</var>
+</assign>
+<msg timestamp="20220330 21:29:24.599" level="INFO">${LinkText} = Python (programming language) - Wikipedia</msg>
+<status status="PASS" starttime="20220330 21:29:22.542" endtime="20220330 21:29:24.599"></status>
 </kw>
-<status status="PASS" starttime="20220329 23:48:59.061" endtime="20220329 23:49:15.676" critical="yes"></status>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${LinkText}</arg>
+</arguments>
+<status status="PASS" starttime="20220330 21:29:24.599" endtime="20220330 21:29:24.599"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:22.542" endtime="20220330 21:29:24.599"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:22.542" endtime="20220330 21:29:24.599"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//h3)[${13}]</arg>
+</arguments>
+<assign>
+<var>${LinkText}</var>
+</assign>
+<msg timestamp="20220330 21:29:26.649" level="INFO">${LinkText} = Online Python Compiler (Interpreter) - Programiz</msg>
+<status status="PASS" starttime="20220330 21:29:24.599" endtime="20220330 21:29:26.649"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${LinkText}</arg>
+</arguments>
+<status status="PASS" starttime="20220330 21:29:26.649" endtime="20220330 21:29:26.649"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:24.599" endtime="20220330 21:29:26.649"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:24.599" endtime="20220330 21:29:26.651"></status>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<doc>Returns number of elements matching ``locator``.</doc>
+<arguments>
+<arg>xpath://cite</arg>
+</arguments>
+<assign>
+<var>${AllLinksCount1}</var>
+</assign>
+<msg timestamp="20220330 21:29:27.668" level="INFO">${AllLinksCount1} = 31</msg>
+<status status="PASS" starttime="20220330 21:29:26.651" endtime="20220330 21:29:27.668"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${AllLinksCount}</arg>
+</arguments>
+<status status="PASS" starttime="20220330 21:29:27.669" endtime="20220330 21:29:27.669"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>@{LinkItems1}</var>
+</assign>
+<msg timestamp="20220330 21:29:27.669" level="INFO">@{LinkItems1} = [ ]</msg>
+<status status="PASS" starttime="20220330 21:29:27.669" endtime="20220330 21:29:27.669"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//cite)[${1}]</arg>
+</arguments>
+<assign>
+<var>${LinkText1}</var>
+</assign>
+<msg timestamp="20220330 21:29:29.736" level="INFO">${LinkText1} = https://www.python.org</msg>
+<status status="PASS" starttime="20220330 21:29:27.669" endtime="20220330 21:29:29.736"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${LinkText1}</arg>
+</arguments>
+<status status="PASS" starttime="20220330 21:29:29.736" endtime="20220330 21:29:29.736"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:27.669" endtime="20220330 21:29:29.736"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:27.669" endtime="20220330 21:29:29.736"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//cite)[${3}]</arg>
+</arguments>
+<assign>
+<var>${LinkText1}</var>
+</assign>
+<msg timestamp="20220330 21:29:31.808" level="INFO">${LinkText1} = https://www.w3schools.com › python</msg>
+<status status="PASS" starttime="20220330 21:29:29.736" endtime="20220330 21:29:31.808"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${LinkText1}</arg>
+</arguments>
+<status status="PASS" starttime="20220330 21:29:31.808" endtime="20220330 21:29:31.808"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:29.736" endtime="20220330 21:29:31.808"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:29.736" endtime="20220330 21:29:31.808"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//cite)[${13}]</arg>
+</arguments>
+<assign>
+<var>${LinkText1}</var>
+</assign>
+<msg timestamp="20220330 21:29:33.861" level="INFO">${LinkText1} = https://en.wikipedia.org › wiki › Python_(programming...</msg>
+<status status="PASS" starttime="20220330 21:29:31.808" endtime="20220330 21:29:33.861"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${LinkText1}</arg>
+</arguments>
+<status status="PASS" starttime="20220330 21:29:33.861" endtime="20220330 21:29:33.861"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:31.808" endtime="20220330 21:29:33.861"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:31.808" endtime="20220330 21:29:33.861"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//cite)[${15}]</arg>
+</arguments>
+<assign>
+<var>${LinkText1}</var>
+</assign>
+<msg timestamp="20220330 21:29:35.946" level="INFO">${LinkText1} = https://www.programiz.com › python-programming › o...</msg>
+<status status="PASS" starttime="20220330 21:29:33.861" endtime="20220330 21:29:35.946"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${LinkText1}</arg>
+</arguments>
+<status status="PASS" starttime="20220330 21:29:35.946" endtime="20220330 21:29:35.946"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:33.861" endtime="20220330 21:29:35.946"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:33.861" endtime="20220330 21:29:35.946"></status>
+</kw>
+<status status="PASS" starttime="20220330 21:29:06.592" endtime="20220330 21:29:35.946" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20220329 23:48:44.569" endtime="20220329 23:49:15.676"></status>
+<status status="PASS" starttime="20220330 21:29:06.453" endtime="20220330 21:29:35.946"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0">Critical Tests</stat>
-<stat pass="3" fail="0">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" id="s1" name="PYTHON">PYTHON</stat>
+<stat pass="1" fail="0" id="s1" name="PYTHON">PYTHON</stat>
 </suite>
 </statistics>
 <errors>
